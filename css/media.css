@@ -1,0 +1,160 @@
+@media (width <= 1700px) {
+  .layer {
+    width: 1400px;
+    height: 600px;
+    position: absolute;
+    background-color: #eeeeee88;
+    border-radius: 1e+23px;
+    transform: rotate(-25deg);
+    right: -40%;
+    top: 0%;
+  }
+  .layer img {
+    width: 33%;
+  }
+}
+@media (width <= 1550px) {
+  .layer {
+    right: -48%;
+    top: 0%;
+  }
+
+}
+
+@media (width <= 1400px) {
+  .layer {
+    width: 1200px;
+    height: 500px;
+    position: absolute;
+    background-color: #eeeeee88;
+    border-radius: 1e+23px;
+    transform: rotate(-25deg);
+    right: -40%;
+    top: 6%;
+  }
+  .layer img {
+    width: 30%;
+  }
+}
+@media (width <= 1200px) {
+  .layer {
+    width: 1100px;
+    right: -60%;
+    top: 6%;
+  }
+
+}
+
+@media (width <= 992px) {
+  #links {
+    position: absolute;
+    background-color: #fff;
+    top: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    padding: 0;
+    padding-top: 40px;
+    border-radius: 999px;
+    z-index: 2;
+  }
+  #links a {
+    margin: 5px !important;
+  }
+  header {
+    overflow: visible;
+  }
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .layer {
+    position: relative !important;
+    width: 400px;
+    height: 400px;
+    right: unset;
+    top: unset;
+    /* overflow: visible; */
+    border-radius: 50%;
+    order: -1;
+    transform: rotate(0);
+    text-align: center;
+  }
+  .layer img {
+    top: 10%;
+    right:  50%;
+    transform: translateX(50%) !important;
+    width: 70%;
+    transform: rotate(0);
+    margin: 0 auto !important;
+  }
+  .title {
+    width: unset !important;
+  }
+}
+@media (992px <= width) {
+  #links {
+    position: relative;
+  }
+}
+
+
+@media (width <= 768px) {
+  .categories {
+    flex: 1;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .categories a {
+    font-size: 16px !important;
+  }
+  .categories li {
+    padding: 0 8px !important;
+  }
+  .logo {
+    padding-right: 70px;
+  }
+  .name {
+    width: 70px;
+    padding: 30px 0 !important;
+    text-align: center;
+  }
+  .name h3 {
+    font-size: 18px;
+  }
+}
+@media (width <= 512px) {
+  .categories a {
+    font-size: 13px !important;
+  }
+  .categories li {
+    padding: 0 5px !important;
+  }
+  nav .container {
+    gap: .1875rem;
+  }
+}
+
+@media (width <= 450px) {
+  .layer {
+    position: relative !important;
+    width: 300px;
+    height: 300px;
+    right: unset;
+    top: unset;
+    border-radius: 50%;
+    order: -1;
+    transform: rotate(0);
+    text-align: center;
+  }
+  .layer img {
+    top: 10%;
+    right:  50%;
+    transform: translateX(50%) !important;
+    width: 70%;
+    transform: rotate(0);
+    margin: 0 auto !important;
+  }
+}
