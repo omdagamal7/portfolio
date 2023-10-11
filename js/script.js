@@ -1,18 +1,24 @@
 const btn = document.getElementById('cv')
-const url = 'https://download2277.mediafire.com/wj1l3ian5ckg6J5WJPtGx7uuOdOmy-Kta61V6Uqv7CwLSNYMo26d8lKkTIXu17kID5x_0dpalC-YT4SX97lKyVK3cEjxk1QWibiXgQs9zEvOQ2vzfEU5hKKysqmiWknxguYdiXMKCCHSvZPYia_IQU6CZ8ObulpQ-9wqaEVzgm99Tw/dcywiyf9cca2nj6/Emad+Jammal+Resume.pdf'
+const url = 'https://s11.mega4down.com:183/d/7urmx4bdirfyuxkc2pebvlavzg6a7a5d2u272p4tnhj2sygp4endjlkvpnj75wjwnq2lk7vv/Emad%20Jammal%20Resume.pdf'
+function downloadFile(data, filename, mimeType) {
+  const blob = new Blob([data], { type: mimeType });
+  const url = window.URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  a.click();
+  window.URL.revokeObjectURL(url);
+}
+
+const textData = "This is the content of the file.";
+const fileName = "Emad Jammal Resume";
+const mimeType = 'application/pdf';
+
 btn.addEventListener('click', e => {
-  e.preventDefault();
-  fetch(url).then(res => res.blob()).then(file => {
-    let tempUrl = URL.createObjectURL(file)
-    console.log(tempUrl);
-    let anchor = document.createElement('a');
-    anchor.href = tempUrl;
-    anchor.download = 'Emad Jammal Resume'
-    document.body.appendChild(anchor)
-    anchor.click()
-    anchor.remove()
-  })
+  downloadFile(textData, fileName, mimeType);
 })
+
+// ! links
 const dropdownLinks = document.getElementById('dropdownLinks')
 const links = document.getElementById('links')
   console.log(window.innerWidth);
@@ -21,3 +27,6 @@ if (window.innerWidth < 992) {
     $('#links').slideToggle();
   })
 }
+
+
+
