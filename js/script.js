@@ -18,3 +18,7 @@ if (window.innerWidth < 992) {
     $('#links').slideToggle();
   })
 }
+
+// ! loader
+
+$('.loader').delay(1000).fadeOut(500);
