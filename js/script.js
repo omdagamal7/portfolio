@@ -1,21 +1,12 @@
 const btn = document.getElementById('cv')
-const url = 'https://s11.mega4down.com:183/d/7urmx4bdirfyuxkc2pebvlavzg6a7a5d2u272p4tnhj2sygp4endjlkvpnj75wjwnq2lk7vv/Emad%20Jammal%20Resume.pdf'
-function downloadFile(data, filename, mimeType) {
-  const blob = new Blob([data], { type: mimeType });
-  const url = window.URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = filename;
-  a.click();
-  window.URL.revokeObjectURL(url);
-}
+const url = 'https://download2277.mediafire.com/2c0r4ah26fug3W_5DrPASqKzoHZG7S0UuIgB9MPL3_D8HqZ8sQIejgOHsYO4Wh0u1vx6USffGYQv0OKu-avqpi8wh7UYpTFL1Auhz5Smx9dkd1Bg5iEiCrXJuhu5sTjpCIEN78h5HufaShsD2XUGXZ8l6IQwGHyjQoEeYAx53Bg53g/dcywiyf9cca2nj6/Emad+Jammal+Resume.pdf'
+btn.addEventListener('click', function (e) {
+  e.preventDefault()
+  const anchor = document.createElement('a')
+  anchor.href = url;
+  anchor.click()
+  anchor.remove()
 
-const textData = "This is the content of the file.";
-const fileName = "Emad Jammal Resume";
-const mimeType = 'application/pdf';
-
-btn.addEventListener('click', e => {
-  downloadFile(textData, fileName, mimeType);
 })
 
 // ! links
@@ -27,6 +18,3 @@ if (window.innerWidth < 992) {
     $('#links').slideToggle();
   })
 }
-
-
-
