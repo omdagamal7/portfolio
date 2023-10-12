@@ -76,7 +76,7 @@
     height: 400px;
     right: unset;
     top: unset;
-    /* overflow: visible; */
+
     border-radius: 50%;
     order: -1;
     transform: rotate(0);
@@ -135,17 +135,14 @@
   nav .container {
     gap: .1875rem;
   }
-  .layer {
-    width: 270px;
-    height: 270px;
-  }
+
 }
 
 @media (width <= 450px) {
   .layer {
     position: relative !important;
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     right: unset;
     top: unset;
     border-radius: 50%;
