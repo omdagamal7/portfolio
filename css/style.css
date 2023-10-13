@@ -280,6 +280,16 @@ a {
     font-size: 35px;
   }
 
+  /* footer */
+  .footer-ul {
+    padding: 0;
+  }
+  .footer-ul a {
+    border: none;
+    font-size: 25px;
+    color: white;
+  }
+
   /* loader */
 
   .loader {
