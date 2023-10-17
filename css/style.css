@@ -33,14 +33,76 @@ a {
   .ng {
     color: #b52e31;
   }
+  .primeNG {
+    color: #c3002f;
+  }
+  .ng-material {
+    color: #ffa726;
+  }
+  .ng-bs {
+    color: #0266c7;
+  }
   .git {
     color: #fc6d26;
   }
   .git-hub {
     color: #333;
   }
+  .bg-html {
+    background-color: #ff6b4222;
+  }
+  .bg-css {
+    background-color: #264de422;
+  }
+  .bg-bs {
+    background-color: #7532fa22;
+  }
+  .bg-scss {
+    background-color: #cf649a22;
+  }
+  .bg-js {
+    background-color: #f7df1e22;
+  }
+  .bg-jq {
+    background-color: #0769ad22;
+  }
+  .bg-ts {
+    background-color: #3178c622;
+  }
+  .bg-primeNG {
+    background-color: #c3002f22;
+  }
+  .bg-ng-material {
+    background-color: #ffa72622;
+  }
+  .bg-ng-bs {
+    background-color: #0266c722;
+  }
+  .bg-ng {
+    background-color: #b52e3122;
+  }
+  .bg-git {
+    background-color: #fc6d2622;
+  }
+  .bg-git-hub {
+    background-color: #33333322;
+  }
   .line-h-2 {
     line-height: 2;
+  }
+  .spikes {
+    position: relative;
+  }
+  .spikes::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    height: 30px;
+    background-size: 31px 30px;
+    background-image: linear-gradient(135deg, #ffffff 25%, transparent 25%),
+    linear-gradient(225deg, #ffffff 25%, transparent 25%);
   }
   .main-title {
     text-transform: uppercase;
@@ -220,7 +282,6 @@ a {
   /* SKILLS */
 
   #skils .box {
-    background-color: #eeeeee44;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -235,27 +296,29 @@ a {
   }
   #skils img {
     width: 100px;
+    margin-bottom: 15px;
   }
   #skils i {
+    margin-bottom: 15px;
     font-size: 105px;
 }
 
-  #skils h4 {
+  /* #skils h4 {
     transform: translateY(60px);
     transition: .5s ease;
     font-weight: 700;
     font-size: 25px;
-    /* display: none; */
+    /* display: none; 
     opacity: 0;
     visibility: hidden;
-    margin: 0;
-  }
+    margin: 0;*/
+  /* } 
   #skils .box:hover h4 {
-    /* display: block; */
+     display: block; 
     opacity: 1;
     visibility: visible;
     transform: translateY(10px);
-  }
+  } */
 
   /* PORTFOLIO */
 
